@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+
+    <h1 class="logo">
+        ☀️☁️ Weather Dashboard
+    </h1>
+
+
+    <nav aria-label="Navigation principale">
+
+        <a href="#">Dashboard</a>
+
+        <a href="#">Forecast</a>
+
+        <a href="#">Cards</a>
+
+        <a href="#">Alerts</a>
+
+        <span class="settings">
+            ⚙️
+        </span>
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+<section class="search-section">
+
+    <h2>
+        🔎 Recherche météo
+    </h2>
+
+
+    <form id="weatherForm">
+
+
+        <label for="cityInput">
+            Nom de la ville :
+        </label>
+
+
+        <input
+            id="cityInput"
+            type="text"
+            placeholder="Exemple : Port-au-Prince"
+            required
+        >
+
+
+        <button type="submit">
+            Rechercher
+        </button>
+
+
+    </form>
+
+
+    <p id="errorMessage" role="alert"></p>
+
+
+</section>
+
+
+
+
+
+
+<section id="loading" class="hidden">
+
+
+    <h2>
+        Chargement des informations
+    </h2>
+
+
+    <p>
+        ⏳ Chargement des données météo...
+    </p>
+
+
+</section>
+
+
+
+
+
+
+<section id="result" class="hidden">
+
+
+    <h2 id="cityName">
+        Résultat météo
+    </h2>
+
+
+
+    <p class="location">
+
+        📍
+
+        <span id="country">
+            Pays
+        </span>
+
+    </p>
+
+
+
+
+
+    <div class="weather-cards">
+
+
+
+        <article class="weather-box">
+
+
+            <span class="icon">
+                🌡️
+            </span>
+
+
+            <h3>
+                Température
+            </h3>
+
+
+            <strong id="temperature">
+                --
+            </strong>
+
+
+        </article>
+
+
+
+
+
+
+
+        <article class="weather-box">
+
+
+            <span class="icon">
+                💨
+            </span>
+
+
+            <h3>
+                Vent
+            </h3>
+
+
+            <strong id="wind">
+                --
+            </strong>
+
+
+        </article>
+
+
+
+
+
+
+
+        <article class="weather-box">
+
+
+            <span class="icon">
+                ☀️
+            </span>
+
+
+            <h3>
+                Conditions
+            </h3>
+
+
+            <strong id="condition">
+                --
+            </strong>
+
+
+        </article>
+
+
+
+
+
+
+
+        <article class="weather-box">
+
+
+            <span class="icon">
+                📍
+            </span>
+
+
+            <h3>
+                Localisation
+            </h3>
+
+
+            <strong id="countryDisplay">
+                --
+            </strong>
+
+
+        </article>
+
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+    <p>
+        © 2026 - LOG3500 - Devoir 2
+    </p>
+
+
+</footer>
+
+
+
+
+
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
